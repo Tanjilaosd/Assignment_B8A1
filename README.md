@@ -26,8 +26,8 @@
 
 ## Blog Posts
 
-- `type-vs-interface.md` — Core differences between type aliases and interfaces, and when to choose one.
-- `type-narrowing.md` — Type narrowing using `typeof`, `instanceof`, and the `in` operator.
+- `type-modifiers.md` — Core differences between type aliases and interfaces, and when to choose one.
+- `type-hierarchy.md` — Type narrowing using `typeof`, `instanceof`, and the `in` operator.
 
 ## How to Verify
 

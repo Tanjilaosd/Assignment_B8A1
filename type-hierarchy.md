@@ -1,5 +1,5 @@
 
-# Understanding any, unknown, and never in TypeScript
+## Understanding any, unknown, and never in TypeScript
 
 # Introduction
 TypeScript has a type hierarchy that helps developers control how values

@@ -40,6 +40,21 @@ class BankAccount {
   }
 }
 ```
+
+```typescript
+class Student {
+  private age: number = 20;
+
+  showAge(): number {
+    return this.age;
+  }
+}
+
+const student = new Student();
+
+console.log(student.showAge()); // 20 
+
+```
 The getBalance() method provides controlled access to the private
 property.
 

@@ -74,6 +74,22 @@ class Dog extends Animal {
 }
 ```
 
+``` typescript
+class Animal {
+  protected sound: string = "Woof";
+}
+
+class Dog extends Animal {
+  showSound() {
+    return this.sound;
+  }
+}
+
+const dog = new Dog();
+
+console.log(dog.showSound()); // Woof
+```
+
 # Readonly
 The readonly modifier allows a property to be assigned during
 declaration or in the constructor, but prevents reassignment afterward.

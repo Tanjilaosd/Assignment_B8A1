@@ -10,7 +10,7 @@ function processInput(value:string | number | boolean):string | number{
         return value.trim().toLowerCase()
     }
     if(typeof value === "number"){
-        return (value * 10).toString()
+        return value * 10
     }
     if(typeof value === "boolean"){
         return value ? "Active" : "Inactive"
@@ -29,7 +29,7 @@ function concatenateArrays<T>(...arrays:T[][]):T[]{
 
 interface Course{
     title:string,
-    student:number,
+    students:number,
     isPublished:boolean
 }
 function getPopularCourses(
@@ -37,12 +37,12 @@ function getPopularCourses(
     minStudents:number
 ):Course[]{
     return courses.filter((course:Course)=>{
-        return course.isPublished === true && course.student >= minStudents
+        return course.isPublished === true && course.students >= minStudents
     })
 }
 
 function pluckValues <T,K extends keyof T>(items:T[],key:K):T[K][]{
-    return items.map(item => item[key])
+    return items.map((item:T):T[K] => item[key])
 }
 
 class Employee{
@@ -53,7 +53,7 @@ class Employee{
         this.baseSalary = baseSalary
     }
     getDetails():string{
-        return `Employee:${this.name}, Base Salary:${this.baseSalary}`
+        return `Employee: ${this.name}, Base Salary: ${this.baseSalary}`
     }
 
 }
@@ -71,7 +71,7 @@ class Manager extends Employee{
 function validateAgeAsync(age:number):Promise<string>{
     return new Promise((resolve,reject) =>{
         if(age < 18){
-            reject(new Error("Access Denide : Must be 18 or older"));
+            reject(new Error("Access Denied: Must be 18 or older"));
         }else{
             setTimeout(()=>{
                 resolve("Access Granted")

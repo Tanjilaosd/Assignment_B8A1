@@ -4,8 +4,8 @@
 
 ```
 ├── solutions.ts
-├── type-vs-interface.md
-├── type-narrowing.md
+├── access-modifiers.md
+├── type-hierarchy.md
 └── README.md
 ```
 
@@ -26,8 +26,8 @@
 
 ## Blog Posts
 
-- `type-modifiers.md` — Core differences between type aliases and interfaces, and when to choose one.
-- `type-hierarchy.md` — Type narrowing using `typeof`, `instanceof`, and the `in` operator.
+- [access-modifiers.md](access-modifiers.md) — How `public`, `private`, `protected`, and `readonly` work in TypeScript OOP, with examples.
+- [type-hierarchy.md](type-hierarchy.md) — How `any`, `unknown`, and `never` differ in TypeScript's type hierarchy, and why `unknown` is preferred over `any`.
 
 ## How to Verify
 
